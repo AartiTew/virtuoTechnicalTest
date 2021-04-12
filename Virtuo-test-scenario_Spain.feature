@@ -28,7 +28,7 @@ Feature: Spain : special case driving license and age
       When The user age is less than 21 year old and driving licence is more than 3 years
       Then User received the message that he can not rent a car with virtuo
 
-   Scenario: Driving licence more than 3 year and user is less than 21 years old
+   Scenario: Driving licence more than 3 year and user is less than 21 years old // AT: I would like you to explain me why you think it should work
       Given You finish the rental steps
       When The user age is less than 21 year old and driving licence is more than 3 years
       Then User received the message that he can rent a car with virtuo without an extra fee for his rental days
@@ -43,7 +43,7 @@ Feature: Spain : special case driving license and age
       When The user age is less than 21 years old and driving licence between 1 and 3 years
       Then User Received the message that he can not rent a car with virtuo
    
-   Scenario: Driving licence between 1 and 3 years and user is les than 21 years old
+   Scenario: Driving licence between 1 and 3 years and user is les than 21 years old // AT: What's the difference between this and the previous scenario.
       Given You finish thee rental steps
       When The user age is less than 21 years old and driving licence between 1 and 3 years
       Then User received the message that he can rent a car with virtuo without an extra fee for his rental days
@@ -52,3 +52,5 @@ Feature: Spain : special case driving license and age
       Given You finish the rental steps
       When The user age is between 21 years and 24 years old old and driving licence between 1 and 3 years
       Then User Received the message that he can rent a car with virtuo with an extra fee of 10e per day for his rental days
+      
+     
